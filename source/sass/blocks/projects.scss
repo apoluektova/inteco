@@ -1,0 +1,12 @@
+.projects {
+  padding: 0 12px 45px 30px;
+}
+
+.projects__title {
+  @include section-title;
+}
+
+.projects__text {
+  margin: 0;
+  text-align: left;
+}

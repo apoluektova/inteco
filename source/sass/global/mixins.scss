@@ -6,3 +6,22 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+@mixin wrapper {
+  padding: 0 15px;
+
+  @media (min-width: $small) {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@mixin section-title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 24px;
+  font-weight: 700;
+  color: $blue;
+  text-align: left;
+}
