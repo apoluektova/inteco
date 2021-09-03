@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 300px;
+  padding: 23px 35px 29px 35px;
+}
+
+.header__link {
+  cursor: pointer;
+}
+
+.header__logo {
+  width: 106px;
+  height: 30px;
+}
+
+.header__button {
+  @include reset-button;
+  display: none;
+}
