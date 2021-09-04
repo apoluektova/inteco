@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify-es").default;
 const del = require("del");
 const sync = require("browser-sync").create();
 const magicImporter = require("node-sass-magic-importer");
@@ -53,6 +54,18 @@ const copy = () => {
 
 exports.copy = copy;
 
+// JS
+const scripts = () => {
+  return gulp
+    .src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+};
+
+exports.scripts = scripts;
+
 // Clean
 const clean = () => {
   return del("build");
@@ -84,19 +97,20 @@ const reload = (done) => {
 // Watcher
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
 // Build
 const build = gulp.series(
   clean,
-  gulp.parallel(styles, html, copy)
+  gulp.parallel(styles, html, scripts, copy)
 );
 
 exports.build = build;
 
 exports.default = gulp.series(
   clean,
-  gulp.parallel(styles, html, copy),
+  gulp.parallel(styles, html, copy, scripts),
   gulp.series(server, watcher)
 );
