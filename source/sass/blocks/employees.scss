@@ -77,3 +77,55 @@
   width: 10px;
   height: 10px;
 }
+
+@media (min-width: $large) {
+  .employees {
+    padding: 45px 0 45px 0;
+
+    &::before {
+      width: 300px;
+      height: 2px;
+    }
+
+    &::after {
+      width: 2px;
+      left: 300px;
+    }
+  }
+
+  .employees__title {
+    padding-left: 330px;
+    margin-bottom: 100px;
+  }
+
+  .employees__title br {
+    display: none;
+  }
+
+  .employees__wrapper {
+    display: flex;
+  }
+
+  .employees__swiper {
+    width: 62.4%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .employees__swiper-pagination {
+    display: none;
+  }
+
+  .employees__list {
+    width: 37.6%;
+    padding: 40px 60px 60px 80px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: -50px;
+  }
+
+  .employees__item::before {
+    left: -30px;
+  }
+}

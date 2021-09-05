@@ -13,11 +13,14 @@
     <div class="wrapper">
       <header class="header">
         <a class="header__link" aria-label="Логотип компании Интеко">
-          <img class="header__logo" src="img/logo.jpg" width="106" height="30" alt="Логотип компании Интеко">
+          <picture>
+            <source media="(min-width:1340px)" srcset="img/logo-desktop.jpg">
+            <img class="header__logo" src="img/logo.jpg" width="106" height="30" alt="Логотип компании Интеко">
+          </picture>
         </a>
-        <button class="header__button" type="button">
+        <a class="header__button">
           <img class="header__world" src="img/link.jpg" width="20" height="20">
-        </button>
+        </a>
       </header>
       <main class="content">
         <h1 class="visually-hidden">Сайт компании Интеко</h1>
@@ -42,36 +45,63 @@
           <h2 class="projects__title">Наши проекты</h2>
           <p class="projects__text">
             За 19 лет на рынке недвижимости компания реализовала более 80 проектов в Москве, Ростове-на-Дону,
-            Санкт-Петербурге<br> и Ленинградской области и построила более 5 млн кв. м.
+            Санкт-Петербурге&nbsp<br> и Ленинградской области и построила более 5 млн кв. м.
           </p>
               <div class="projects__swiper swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide09.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide09-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide09.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide08.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide08-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide08.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide07.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide07-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide07.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide06.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide06-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide06.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide05.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide05-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide05.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide04.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide04-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide04.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide03.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide03-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide03.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide02.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide02-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide02.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                   <div class="swiper-slide">
-                    <img class="projects__swiper-image" src="img/projects_slide01.jpg" alt="Изображение проекта компании Интеко">
+                    <picture>
+                      <source media="(min-width:1340px)" srcset="img/projects_slide01-desktop.jpg">
+                      <img class="projects__swiper-image" src="img/projects_slide01.jpg" alt="Изображение проекта компании Интеко">
+                    </picture>
                   </div>
                 </div>
                 <div class="projects__swiper-pagination swiper-pagination"></div>
@@ -99,18 +129,22 @@
               и Санкт-Петербурге. На данный момент «ИНТЕКО» находится в стадии реализации стратегической программы трансформации:
             </p>
             <div class="now__info">
-              <p class="now__stats">
+              <div class="now__stats">
                 <span class="now__large-text">Более</span>
-                <span class="now__numbers">2000</span>
-                <span class="now__large-text">человек</span>
+                <div class="now__text-wrapper">
+                  <span class="now__numbers">2000</span>
+                  <span class="now__large-text">человек</span>
+                </div>
                 <span class="now__plain-text">Общая численность персонала</span>
-              </p>
-              <p class="now__stats">
+              </div>
+              <div class="now__stats">
                 <span class="now__large-text">Около</span>
-                <span class="now__numbers now__numbers--volume">1,2<br></span>
-                <span class="now__large-text">млн кв. м.</span>
+                <div class="now__text-wrapper">
+                  <span class="now__numbers now__numbers--volume">1,2<br></span>
+                  <span class="now__large-text">млн кв. м.</span>
+                </div>
                 <span class="now__plain-text">Объем текущего строительства</span>
-              </p>
+              </div>
             </div>
           </div>
           <ul class="now__facts">
@@ -129,7 +163,7 @@
           <div class="now__image"></div>
         </section>
         <section class="principles">
-          <h2 class="principles__title">Основные принципы работы с<br> персоналом</h2>
+          <h2 class="principles__title">Основные принципы работы с&nbsp<br>персоналом</h2>
           <div class="principles__swiper swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -192,64 +226,99 @@
           </div>
         </section>
         <section class="employees">
-          <h2 class="employees__title">Компания<br> предлагает своим сотрудникам</h2>
-          <div class="employees__swiper swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide01.jpg" alt="Сотрудники компании Интеко">
+          <h2 class="employees__title">Компания&nbsp<br> предлагает своим сотрудникам</h2>
+          <div class="employees__wrapper">
+            <div class="employees__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide01-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide01.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide02-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide02.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide03-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide03.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide04-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide04.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide05-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide05.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide06-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide06.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide07-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide07.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide08-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide08.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide09-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide09.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide10-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide10.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(min-width:1340px)" srcset="img/employees_slide11-desktop.jpg">
+                    <img class="employees__swiper-image" src="img/employees_slide11.jpg" alt="Сотрудники компании Интеко">
+                  </picture>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide02.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide03.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide04.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide05.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide06.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide07.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide08.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide09.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide10.jpg" alt="Сотрудники компании Интеко">
-              </div>
-              <div class="swiper-slide">
-                <img class="employees__swiper-image" src="img/employees_slide11.jpg" alt="Сотрудники компании Интеко">
-              </div>
+              <div class="employees__swiper-pagination swiper-pagination"></div>
             </div>
-            <div class="employees__swiper-pagination swiper-pagination"></div>
+            <ul class="employees__list">
+              <li class="employees__item">работу в центре Москвы, в 1 минуте ходьбы от ст. метро «Красные ворота»</li>
+              <li class="employees__item">полное соблюдение норм трудового законодательства</li>
+              <li class="employees__item">возможность адаптации графика работы под индивидуальные потребности</li>
+              <li class="employees__item">возможность удаленного режима работы</li>
+              <li class="employees__item">своевременную выплату заработной платы</li>
+              <li class="employees__item">прозрачную систему KPI и премирования по итогам работы за год</li>
+              <li class="employees__item">корпоративные программы скидок и выгодные предложения от партнеров</li>
+              <li class="employees__item">материальную поддержку</li>
+              <li class="employees__item">
+                добровольное медицинское страхование (включая стоматологию, страхование выезжающих за рубеж,
+                а также льготную стоимость страховки для членов семьи сотрудника)
+              </li>
+              <li class="employees__item">широкие возможности для совместного времяпрепровождения вне работы:
+                спортивные и интеллектуальные игры (в компании есть самообразующиеся группы по футболу, бегу
+                и интеллектуальным викторинам), корпоративные праздники, участие в мероприятиях, проводимых Советом
+                молодых специалистов строительной отрасли г. Москвы, и многое другое.
+              </li>
+            </ul>
           </div>
-          <ul class="employees__list">
-            <li class="employees__item">работу в центре Москвы, в 1 минуте ходьбы от ст. метро «Красные ворота»</li>
-            <li class="employees__item">полное соблюдение норм трудового законодательства</li>
-            <li class="employees__item">возможность адаптации графика работы под индивидуальные потребности</li>
-            <li class="employees__item">возможность удаленного режима работы</li>
-            <li class="employees__item">своевременную выплату заработной платы</li>
-            <li class="employees__item">прозрачную систему KPI и премирования по итогам работы за год</li>
-            <li class="employees__item">корпоративные программы скидок и выгодные предложения от партнеров</li>
-            <li class="employees__item">материальную поддержку</li>
-            <li class="employees__item">
-              добровольное медицинское страхование (включая стоматологию, страхование выезжающих за рубеж,
-              а также льготную стоимость страховки для членов семьи сотрудника)
-            </li>
-            <li class="employees__item">широкие возможности для совместного времяпрепровождения вне работы:
-              спортивные и интеллектуальные игры (в компании есть самообразующиеся группы по футболу, бегу
-              и интеллектуальным викторинам), корпоративные праздники, участие в мероприятиях, проводимых Советом
-              молодых специалистов строительной отрасли г. Москвы, и многое другое.
-            </li>
-          </ul>
         </section>
       </main>
     </div>

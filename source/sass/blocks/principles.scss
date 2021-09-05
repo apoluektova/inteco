@@ -57,3 +57,47 @@
   width: 10px;
   height: 10px;
 }
+
+@media (min-width: $large) {
+  .principles {
+    padding: 45px 0 55px 60px;
+  }
+
+  .principles__swiper {
+    width: 95.2%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .principles__swiper-pagination {
+    display: none;
+  }
+
+  .principles__title {
+    margin-bottom: 60px;
+  }
+
+  .principles__title br {
+    display: none;
+  }
+
+  .principles__slide {
+    padding: 50px 60px 60px 50px;
+  }
+
+  .principles__slide-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 60px;
+
+    &::after {
+      height: 4px;
+      background-image: url("../img/divider-desktop.png");
+    }
+  }
+
+  .principles__slide-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

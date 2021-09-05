@@ -127,3 +127,103 @@
   position: relative;
   z-index: 1;
 }
+
+@media (min-width: $large) {
+  .now {
+    padding: 40px 0 50px 60px;
+
+    &::before {
+      width: 2px;
+      height: 84px;
+      left: 300px;
+    }
+
+    &::after {
+      height: 2px;
+      left: 300px;
+    }
+  }
+
+  .now__wrapper {
+    justify-content: space-between;
+    padding-right: 60px;
+  }
+
+  .now__text {
+    width: 50%;
+    //margin-right: 6.4%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .now__text br {
+    display: none;
+  }
+
+  .now__info {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .now__stats {
+    display: block;
+    width: 50%;
+  }
+
+  .now__text-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .now__large-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .now__numbers {
+    font-size: 48px;
+    line-height: 42px;
+    margin-right: 5px;
+  }
+
+  .now__plain-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .now__image {
+    width: 920px;
+    height: 570px;
+    background-image: url("../img/now-desktop.jpg");
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .now__facts {
+    width: 37.6%;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 60px 30px 60px 70px;
+
+    &::before {
+      width: 300px;
+      height: 2px;
+      top: -35px;
+    }
+
+    &::after {
+      width: 2px;
+      height: 35px;
+      left: 300px;
+      top: -35px;
+    }
+  }
+
+  .now__fact-item::before {
+    left: -30px;
+  }
+}

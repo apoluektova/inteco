@@ -25,4 +25,9 @@
   font-weight: 700;
   color: $blue;
   text-align: left;
+
+  @media (min-width: $large) {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }

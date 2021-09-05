@@ -15,13 +15,28 @@
 }
 
 .header__button {
-  @include reset-button;
   display: none;
 }
 
 @media (min-width: $large) {
   .header {
-    padding: 40px 60px;
+    padding: 40px 60px 37px 60px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 300px;
+      background-color: $brown;
+    }
+  }
+
+  .header__logo {
+    width: 150px;
+    height: 40px;
   }
 
   .header__button {

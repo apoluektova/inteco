@@ -82,3 +82,61 @@
   width: 10px;
   height: 10px;
 }
+
+@media (min-width: $large) {
+  .projects {
+    padding: 0 0 50px 0;
+
+    &::before {
+      width: 2px;
+      left: 300px;
+    }
+
+    &::after {
+      height: 2px;
+      left: 300px;
+    }
+  }
+
+  .projects__title {
+    padding-left: 330px;
+  }
+
+  .projects__text {
+    padding-left: 330px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--key {
+      padding-left: 0;
+    }
+  }
+
+  .projects__text br {
+    display: none;
+  }
+
+  .projects__swiper {
+    margin-right: auto;
+    width: 920px;
+    margin-bottom: 50px;
+  }
+
+  .projects__swiper-pagination {
+    display: none;
+  }
+
+  .projects__description {
+    width: 32.8%;
+    margin: 0;
+    position: absolute;
+    top: 190px;
+    right: 0;
+    padding: 55px 60px 60px 50px;
+  }
+
+  .projects__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
