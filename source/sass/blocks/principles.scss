@@ -10,6 +10,7 @@
 .principles__slide {
   background-color: $white;
   padding: 37px 20px 45px 20px;
+  min-height: 500px;
 }
 
 .principles__slide-title {
@@ -34,4 +35,17 @@
 .principles__slide-text {
   text-align: left;
   margin: 0;
+}
+
+.principles__swiper-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: $dots-blue;
+  opacity: 1;
+  vertical-align: middle;
+}
+
+.principles__swiper-pagination .swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
 }

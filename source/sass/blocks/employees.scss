@@ -33,3 +33,24 @@
     left: -20px;
   }
 }
+
+.employees__swiper {
+  margin-left: -30px;
+}
+
+.employees__swiper .employees__swiper-pagination {
+  bottom: 50px;
+}
+
+.employees__swiper-pagination .swiper-pagination-bullet {
+  background-color: $white;
+  width: 6px;
+  height: 6px;
+  opacity: 1;
+  vertical-align: middle;
+}
+
+.employees__swiper-pagination .swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+}

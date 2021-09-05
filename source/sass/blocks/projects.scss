@@ -14,7 +14,8 @@
 .projects__description {
   background-color: $white;
   padding: 27px 20px 26px 20px;
-  // margin-top: -30px;
+  margin-top: -30px;
+  margin-right: -20px;
   position: relative;
   z-index: 20;
   margin-bottom: 30px;
@@ -26,6 +27,14 @@
   text-align: left;
   margin: 0;
   margin-bottom: 17px;
+}
+
+.projects__swiper {
+  margin-left: -30px;
+}
+
+.projects__swiper .projects__swiper-pagination {
+  bottom: 40px;
 }
 
 .projects__swiper-pagination .swiper-pagination-bullet {
