@@ -1,5 +1,5 @@
 .employees {
-  padding: 25px 20px 55px 20px;
+  padding: 53px 20px 55px 20px;
   position: relative;
 
   &::before {
@@ -25,23 +25,24 @@
 
 .employees__title {
   @include section-title;
-  line-height: 32px;
+  padding-left: 10px;
+  margin-bottom: 28px;
 }
 
 .employees__list {
   list-style: none;
   margin: 0;
   margin-right: -20px;
-  margin-top: -40px;
+  margin-top: -45px;
   text-align: left;
-  padding: 30px 10px 30px 40px;
+  padding: 28px 20px 32px 39px;
   background-color: $white;
   position: relative;
   z-index: 20;
 }
 
 .employees__item {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   position: relative;
 
   &:last-of-type {
@@ -57,11 +58,11 @@
 }
 
 .employees__swiper {
-  margin-left: -30px;
+  margin-left: -21px;
 }
 
 .employees__swiper .employees__swiper-pagination {
-  bottom: 50px;
+  bottom: 52px;
 }
 
 .employees__swiper-pagination .swiper-pagination-bullet {

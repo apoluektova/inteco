@@ -1,5 +1,5 @@
 .now {
-  padding: 40px 20px 20px 20px;
+  padding: 36px 20px 21px 20px;
   position: relative;
 
   &::before {
@@ -25,23 +25,30 @@
 
 .now__title {
   @include section-title;
+  margin-bottom: 13px;
 }
 
 .now__wrapper {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 46px;
 }
 
 .now__text {
   margin: 0;
-  margin-right: 25px;
   text-align: left;
+  width: 45%;
+  margin-right: 9%;
+}
+
+.now__info {
+  width: 35%;
+  margin-top: -2px;
 }
 
 .now__stats {
   margin: 0;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -56,7 +63,13 @@
 
 .now__numbers {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &--volume {
+    margin-bottom: 3px;
+    display: block;
+  }
 }
 
 .now__facts {
@@ -64,7 +77,7 @@
   margin: 0;
   margin-left: -20px;
   text-align: left;
-  padding: 30px 10px 30px 40px;
+  padding: 25px 10px 27px 39px;
   background-color: $white;
   position: relative;
   z-index: 2;
@@ -91,7 +104,7 @@
 }
 
 .now__fact-item {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   position: relative;
 
   &:last-of-type {

@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  padding-bottom: 41px;
+  padding-bottom: 33px;
   position: relative;
 
   &::before {
@@ -23,9 +23,9 @@
 
 .about__description {
   background-color: $white;
-  width: 90.9%;
+  width: 93.2%;
   margin-top: -40px;
-  padding: 41px 20px 44px 20px;
+  padding: 34px 20px 40px 20px;
   position: relative;
   z-index: 2;
 }
@@ -37,7 +37,7 @@
 .about__text {
   text-align: left;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 
   &:last-of-type {
     margin-bottom: 0;

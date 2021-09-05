@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 1,
   allowTouchMove: true,
+  autoHeight: true,
 
   pagination: {
     el: '.swiper-pagination',
