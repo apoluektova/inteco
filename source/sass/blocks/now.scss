@@ -1,5 +1,26 @@
 .now {
-  padding: 0 20px 55px 20px;
+  padding: 40px 20px 20px 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 164px;
+    bottom: 0;
+    left: 10px;
+    background-color: $brown;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 10px);
+    height: 1px;
+    bottom: 0;
+    left: 10px;
+    background-color: $brown;
+  }
 }
 
 .now__title {
@@ -47,6 +68,26 @@
   background-color: $white;
   position: relative;
   z-index: 2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    left: 0;
+    top: -20px;
+    background-color: $brown;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 20px;
+    left: 10px;
+    top: -20px;
+    background-color: $brown;
+  }
 }
 
 .now__fact-item {
@@ -61,6 +102,7 @@
     content: "—";
     position: absolute;
     left: -20px;
+    color: $blue;
   }
 }
 

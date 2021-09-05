@@ -1,6 +1,17 @@
 .about {
   width: 100%;
   padding-bottom: 41px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: $brown;
+    top: 0;
+    left: 10px;
+  }
 }
 
 .about__image {
@@ -15,6 +26,8 @@
   width: 90.9%;
   margin-top: -40px;
   padding: 41px 20px 44px 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .about__title {

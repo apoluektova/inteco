@@ -1,5 +1,26 @@
 .employees {
-  padding: 0 20px 55px 20px;
+  padding: 25px 20px 55px 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: $brown;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 10px;
+    background-color: $brown;
+  }
 }
 
 .employees__title {
@@ -31,6 +52,7 @@
     content: "—";
     position: absolute;
     left: -20px;
+    color: $blue;
   }
 }
 
