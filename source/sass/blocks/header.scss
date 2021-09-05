@@ -18,3 +18,13 @@
   @include reset-button;
   display: none;
 }
+
+@media (min-width: $large) {
+  .header {
+    padding: 40px 60px;
+  }
+
+  .header__button {
+    display: block;
+  }
+}
