@@ -50,9 +50,13 @@
 }
 
 @media (min-width: $large) {
-  .about::before {
-    width: 2px;
-    left: 300px;
+  .about {
+    padding-bottom: 97px;
+
+    &::before {
+      width: 2px;
+      left: 298px;
+    }
   }
 
   .about__image {
@@ -73,18 +77,19 @@
     width: 44%;
     margin: 0;
     order: 1;
-    padding: 55px 30px 55px 60px;
+    padding: 48px 30px 53px 60px;
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 0;
   }
 
   .about__title {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
   }
 
   .about__text {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 10px;
   }
 }

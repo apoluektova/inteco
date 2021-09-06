@@ -89,30 +89,34 @@
 
 @media (min-width: $large) {
   .projects {
-    padding: 0 0 50px 0;
+    padding: 0 0 47px 0;
 
     &::before {
       width: 2px;
-      left: 300px;
+      left: 298px;
     }
 
     &::after {
       height: 2px;
-      left: 300px;
+      left: 298px;
     }
   }
 
   .projects__title {
     padding-left: 330px;
+    margin-bottom: 17px;
   }
 
   .projects__text {
     padding-left: 330px;
+    padding-right: 215px;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 0;
 
     &--key {
       padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -120,16 +124,21 @@
     display: none;
   }
 
+  .projects__text .projects__br {
+    display: block;
+  }
+
   .projects__swiper {
-    margin-right: auto;
+    margin-left: 0;
     width: 920px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
+    margin-top: 55px;
   }
 
   .projects__swiper-buttons {
     display: block;
     position: absolute;
-    bottom: 200px;
+    bottom: 255px;
     right: 60px;
   }
 
@@ -200,16 +209,17 @@
   }
 
   .projects__description {
-    width: 32.8%;
+    width: 37.5%;
     margin: 0;
     position: absolute;
-    top: 190px;
+    top: 195px;
     right: 0;
-    padding: 55px 60px 60px 50px;
+    padding: 56px 60px 56px 50px;
   }
 
   .projects__subtitle {
     font-size: 18px;
     line-height: 26px;
+    margin-bottom: 10px;
   }
 }
