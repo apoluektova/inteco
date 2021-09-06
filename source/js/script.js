@@ -3,6 +3,7 @@ const projectsSwiper = new Swiper('.projects__swiper', {
   loop: true,
   slidesPerView: 1,
   allowTouchMove: true,
+  initialSlide: 6,
 
   pagination: {
     el: '.projects__swiper-pagination',
@@ -50,6 +51,7 @@ const employeesSwiper = new Swiper('.employees__swiper', {
   loop: true,
   slidesPerView: 1,
   allowTouchMove: true,
+  initialSlide: 6,
 
   pagination: {
     el: '.employees__swiper-pagination',
