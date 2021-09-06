@@ -66,6 +66,10 @@
   margin-left: -21px;
 }
 
+.projects__swiper-buttons {
+  display: none;
+}
+
 .projects__swiper .projects__swiper-pagination {
   bottom: 40px;
 }
@@ -120,6 +124,75 @@
     margin-right: auto;
     width: 920px;
     margin-bottom: 50px;
+  }
+
+  .projects__swiper-buttons {
+    display: block;
+    position: absolute;
+    bottom: 200px;
+    right: 60px;
+  }
+
+  .projects__swiper-button-prev,
+  .projects__swiper-button-next {
+    @include reset-button;
+    display: block;
+    width: 20px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1px;
+      width: 20px;
+      background-color: $gray;
+    }
+  }
+
+  .projects__swiper-button-next {
+    position: relative;
+
+    &::before {
+      box-shadow: 0 1px rgba($light-gray, 0.5);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 1px;
+      bottom: 4px;
+      right: 2px;
+      transform: rotate(-45deg);
+      background-color: $gray;
+    }
+  }
+
+  .projects__swiper-button-prev {
+    position: relative;
+
+    &::before {
+      box-shadow: 0 -1px rgba($light-gray, 0.5);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 1px;
+      top: 0;
+      left: 2px;
+      transform: rotate(-45deg);
+      background-color: $gray;
+    }
   }
 
   .projects__swiper-pagination {
