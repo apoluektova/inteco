@@ -63,7 +63,7 @@
 
 @media (min-width: $large) {
   .principles {
-    padding: 45px 0 55px 60px;
+    padding: 42px 0 50px 60px;
     position: relative;
   }
 
@@ -71,7 +71,7 @@
     display: block;
     position: absolute;
     right: 60px;
-    top: 175px;
+    top: 185px;
     z-index: 2;
   }
 
@@ -138,9 +138,8 @@
   }
 
   .principles__swiper {
-    width: 95.2%;
+    width: 100%;
     margin-right: 0;
-    margin-left: auto;
     position: relative;
   }
 
@@ -149,7 +148,7 @@
   }
 
   .principles__title {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
   }
 
   .principles__title br {
@@ -157,17 +156,18 @@
   }
 
   .principles__slide {
-    padding: 50px 60px 60px 50px;
+    padding: 44px 60px 60px 50px;
   }
 
   .principles__slide-title {
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 60px;
+    margin-bottom: 52px;
 
     &::after {
       height: 4px;
       background-image: url("../img/divider-desktop.png");
+      bottom: -17px;
     }
   }
 
