@@ -97,6 +97,13 @@
   display: none;
 }
 
+@media (min-width: $small) {
+  .employees__list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 @media (min-width: $large) {
   .employees {
     padding: 42px 0 285px 0;

@@ -51,6 +51,13 @@
   }
 }
 
+@media (min-width: $small) {
+  .about__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 @media (min-width: $large) {
   .about {
     padding-bottom: 97px;

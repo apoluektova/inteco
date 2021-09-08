@@ -153,6 +153,14 @@
   .now__wrapper {
     justify-content: space-between;
   }
+
+  .now__text,
+  .now__large-text,
+  .now__plain-text,
+  .now__facts {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: $large) {
