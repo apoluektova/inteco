@@ -15,14 +15,16 @@
 }
 
 .about__image {
-  width: 280px;
-  height: 174px;
+  width: 93.3%;
+  height: auto;
+  padding-bottom: 58%;
   background-image: url("../img/about.jpg");
+  background-size: cover;
   margin-left: auto;
 
   @media (min-resolution: $retina) {
     background-image: url("../img/about@2x.jpg");
-    background-size: 280px auto;
+    background-size: cover;
   }
 }
 
@@ -66,6 +68,7 @@
     background-image: url("../img/about-desktop.jpg");
     order: 2;
     flex-shrink: 0;
+    padding-bottom: 0;
 
     @media (min-resolution: $retina) {
       background-image: url("../img/about-desktop@2x.jpg");

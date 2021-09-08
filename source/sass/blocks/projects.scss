@@ -47,7 +47,7 @@
   background-color: $white;
   padding: 23px 30px 23px 20px;
   margin-top: -35px;
-  margin-right: -20px;
+  margin-left: auto;
   position: relative;
   z-index: 20;
   margin-bottom: 25px;
@@ -66,6 +66,10 @@
   margin-left: -21px;
 }
 
+.projects__swiper-image {
+  width: 100%;
+}
+
 .projects__swiper-buttons {
   display: none;
 }
@@ -80,6 +84,7 @@
   height: 6px;
   opacity: 1;
   vertical-align: middle;
+  margin: 0 6px;
 }
 
 .projects__swiper-pagination .swiper-pagination-bullet-active {

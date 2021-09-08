@@ -28,6 +28,7 @@ const principlesSwiper = new Swiper('.principles__swiper', {
   slidesPerView: 1,
   allowTouchMove: true,
   autoHeight: true,
+  initialSlide: 1,
 
   pagination: {
     el: '.principles__swiper-pagination',
@@ -41,7 +42,7 @@ const principlesSwiper = new Swiper('.principles__swiper', {
 
   breakpoints: {
     1340: {
-      initialSlide: 1,
+      initialSlide: 0,
     }
   }
 });
