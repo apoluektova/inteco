@@ -160,14 +160,23 @@
     padding: 42px 0 56px 60px;
 
     &::before {
+      position: absolute;
+      content: "";
       width: 2px;
-      height: 84px;
+      height: 90px;
       left: 298px;
+      bottom: 0;
+      background-color: $brown;
     }
 
     &::after {
+      position: absolute;
+      content: "";
+      width: calc(100% - 10px);
       height: 2px;
       left: 298px;
+      bottom: 0;
+      background-color: $brown;
     }
   }
 
@@ -246,6 +255,11 @@
     margin-top: 0;
     margin-left: auto;
     padding-bottom: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
 
     @media (min-resolution: $retina) {
       background-image: url("../img/now-desktop@2x.jpg");

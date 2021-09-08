@@ -60,16 +60,20 @@
 .employees__swiper {
   margin-left: -21px;
   position: relative;
-  width: 280px;
+  width: 107.7%;
   overflow: hidden;
 }
 
 .employees__swiper .swiper-slide {
-  width: 280px;
+  width: 100%;
 }
 
 .employees__swiper .swiper-wrapper {
-  width: 280px;
+  width: 100%;
+}
+
+.employees__swiper-image {
+  width: 100%;
 }
 
 .employees__swiper .employees__swiper-pagination {
