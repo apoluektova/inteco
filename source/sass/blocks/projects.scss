@@ -64,6 +64,17 @@
 
 .projects__swiper {
   margin-left: -21px;
+  position: relative;
+  width: 280px;
+  overflow: hidden;
+}
+
+.projects__swiper .swiper-slide {
+  width: 280px;
+}
+
+.projects__swiper .swiper-wrapper {
+  width: 280px;
 }
 
 .projects__swiper-image {

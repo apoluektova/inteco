@@ -3,7 +3,6 @@ const projectsSwiper = new Swiper('.projects__swiper', {
   loop: true,
   slidesPerView: 1,
   allowTouchMove: true,
-  initialSlide: 6,
 
   pagination: {
     el: '.projects__swiper-pagination',
@@ -16,6 +15,9 @@ const projectsSwiper = new Swiper('.projects__swiper', {
   },
 
   breakpoints: {
+    330: {
+      initialSlide: 6,
+    },
     1340: {
       initialSlide: 8,
     }
@@ -28,7 +30,6 @@ const principlesSwiper = new Swiper('.principles__swiper', {
   slidesPerView: 1,
   allowTouchMove: true,
   autoHeight: true,
-  initialSlide: 1,
 
   pagination: {
     el: '.principles__swiper-pagination',
@@ -41,6 +42,9 @@ const principlesSwiper = new Swiper('.principles__swiper', {
   },
 
   breakpoints: {
+    330: {
+      initialSlide: 1,
+    },
     1340: {
       initialSlide: 0,
     }
@@ -52,7 +56,6 @@ const employeesSwiper = new Swiper('.employees__swiper', {
   loop: true,
   slidesPerView: 1,
   allowTouchMove: true,
-  initialSlide: 6,
 
   pagination: {
     el: '.employees__swiper-pagination',
@@ -65,6 +68,9 @@ const employeesSwiper = new Swiper('.employees__swiper', {
   },
 
   breakpoints: {
+    330: {
+      initialSlide: 6,
+    },
     1340: {
       initialSlide: 9,
     }
