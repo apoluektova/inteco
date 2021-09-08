@@ -1,5 +1,5 @@
 .principles {
-  padding: 45px 20px 0 20px;
+  padding: 45px 20px 33px 20px;
 }
 
 .principles__title {
@@ -43,6 +43,8 @@
 .principles__swiper {
   margin-right: -20px;
   position: relative;
+  width: 107.7%;
+  overflow: hidden;
 }
 
 .principles__swiper .principles__swiper-pagination {

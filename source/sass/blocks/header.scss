@@ -46,6 +46,7 @@
     height: 20px;
     background-image: url("../img/link.jpg");
     margin-top: -5px;
+    margin-left: auto;
 
     @media (min-resolution: $retina) {
       background-image: url("../img/link@2x.jpg");

@@ -1,5 +1,5 @@
 .employees {
-  padding: 53px 20px 55px 20px;
+  padding: 20px 20px 55px 20px;
   position: relative;
 
   &::before {
@@ -60,6 +60,16 @@
 .employees__swiper {
   margin-left: -21px;
   position: relative;
+  width: 280px;
+  overflow: hidden;
+}
+
+.employees__swiper .swiper-slide {
+  width: 280px;
+}
+
+.employees__swiper .swiper-wrapper {
+  width: 280px;
 }
 
 .employees__swiper .employees__swiper-pagination {
