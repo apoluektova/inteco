@@ -79,6 +79,10 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  .principles__title br {
+    display: none;
+  }
 }
 
 @media (min-width: $large) {
