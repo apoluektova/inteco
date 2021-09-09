@@ -21,9 +21,6 @@ const projectsSwiper = new Swiper('.projects__swiper', {
     1340: {
       initialSlide: 8,
     },
-    1440: {
-      initialSlide: 8,
-    },
   }
 });
 
@@ -51,9 +48,6 @@ const principlesSwiper = new Swiper('.principles__swiper', {
     1340: {
       initialSlide: 0,
     },
-    1440: {
-      initialSlide: 0,
-    }
   }
 });
 
@@ -80,8 +74,5 @@ const employeesSwiper = new Swiper('.employees__swiper', {
     1340: {
       initialSlide: 9,
     },
-    1440: {
-      initialSlide: 9,
-    }
   }
 });
